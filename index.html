@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="logoHvid.png" alt="logo">
+    <h1>CLC Rustfri | Administrator</h1>
+
+    <div class="content">
+
+        <div>
+    <form action="https://eksamen-api.herokuapp.com/api/contact" method="post">
+        <label for="number">Nummer</label>
+        <input type="text" name="number" id="number" placeholder="">
+      
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+<div>
+    <form action="https://eksamen-api.herokuapp.com/api/contact" method="post">
+        <label for="email">Mail</label>
+        <input type="text" name="email" id="email" placeholder="">
+        
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div>
+    <form method="post">
+        <div>
+          <label for="file">Upload billede</label>
+          <input type="file" id="file" name="file" multiple>
+        </div>
+        <label for="billede">Vælg en kategori</label>
+<select name="billede">
+  <option alt="altan">Altan</option>
+  <option alt="trapper">Trapper</option>
+  <option alt="diverse">Diverse</option>
+
+</select>
+<button>Submit</button>
+       </form>
+       </div>
+    </div>
+    <a href="https://analytics.google.com/analytics/web/#/p276124426/realtime/overview?params=_u..nav%3Ddefault" >Google Analytics</a>
+
+       <a href="">Link til CLC Rustfri</a>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        div{
+            margin: 30px;
+            background-color: #CCCCCC;
+            border-radius: 10px;
+        }
+    }
+    img{
+        margin: 0 auto;
+        width: 400px;
+    }
+    form{
+        margin: 15px;
+    }
+    .button-link{
+      
+            font: bold 11px Arial;
+            text-decoration: none;
+            background-color: #EEEEEE;
+            color: #333333;
+            padding: 2px 6px 2px 6px;
+            border-top: 1px solid #CCCCCC;
+            border-right: 1px solid #333333;
+            border-bottom: 1px solid #333333;
+            border-left: 1px solid #CCCCCC;
+          }
+    
+}
