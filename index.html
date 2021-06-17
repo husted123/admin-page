@@ -32,21 +32,20 @@
     </div>
 
     <div>
-    <form method="post">
-        <div>
-          <label for="file">Upload billede</label>
-          <input type="file" id="file" name="file" multiple>
-        </div>
-        <label for="billede">Vælg en kategori</label>
-<select name="billede">
-  <option alt="altan">Altan</option>
-  <option alt="trapper">Trapper</option>
-  <option alt="diverse">Diverse</option>
-
-</select>
-<button>Submit</button>
-       </form>
-       </div>
+        <form method="post" action="https://eksamen-api.herokuapp.com/api/img" enctype="multipart/form-data">
+            <div>
+                <label for="file">Upload billede</label>
+                <input type="file" accept="image/*" id="file" name="image">
+            </div>
+            <label for="alt">Vælg en kategori</label>
+            <select name="alt">
+                <option value="altan" alt="altan">Altan</option>
+                <option value="trappe" alt="trapper">Trapper</option>
+                <option value="special" alt="diverse">Diverse</option>
+            </select>
+            <button>Submit</button>
+        </form>
+    </div>
     </div>
     <a href="https://analytics.google.com/analytics/web/#/p276124426/realtime/overview?params=_u..nav%3Ddefault" >Google Analytics</a>
 
