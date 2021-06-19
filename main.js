@@ -1,5 +1,5 @@
 // Fetch contact info
-fetch('http://localhost:4000/api/contact')
+fetch('https://eksamen-api.herokuapp.com/api/contact')
   .then(response => response.json())
   .then(data => printContact(data))
 
@@ -10,7 +10,7 @@ let printContact = (data) => {
 };
 
 // Fetch image list
-fetch('http://localhost:4000/api/img')
+fetch('https://eksamen-api.herokuapp.com/api/img')
  .then(response => response.json())
  .then(data => printImg(data));
 
@@ -23,7 +23,7 @@ function printImg(data){
 
     //Image
     let image = document.createElement("img")
-    image.setAttribute('src', 'http://localhost:4000' + img.url);
+    image.setAttribute('src', 'https://eksamen-api.herokuapp.com' + img.url);
     image.setAttribute('alt', img.alt);
     image.setAttribute('tag', img.tag);
     container.appendChild(image)
@@ -56,7 +56,7 @@ function printImg(data){
 }
 
 async function deleteImg(data){
-    const response = await(fetch('http://localhost:4000/api/img', {
+    const response = await(fetch('https://eksamen-api.herokuapp.com/api/img', {
         method: 'delete',
         body: JSON.stringify({'url': data}),
         headers: {
