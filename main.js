@@ -26,6 +26,7 @@ function printImg(data){
     image.setAttribute('src', 'https://eksamen-api.herokuapp.com' + img.url);
     image.setAttribute('alt', img.alt);
     image.setAttribute('tag', img.tag);
+    image.classList.add("gallery-image")
     container.appendChild(image)
 
     // Display URL
