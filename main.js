@@ -16,6 +16,7 @@ fetch('https://eksamen-api.herokuapp.com/api/img')
 
 // Display in dom
 function printImg(data){
+  document.getElementById('imgContainer').innerText = "";
   data.map(img => {
     // Container for image card
     let container = document.createElement("div")

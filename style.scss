@@ -43,8 +43,14 @@ body {
         flex-wrap: wrap;
         align-items: center;
         margin-top: 100px;
+      justify-content: space-around;
+
         div{
             align-items: center;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #EEEEEE;
         }
     }
 
